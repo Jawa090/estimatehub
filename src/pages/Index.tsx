@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
@@ -10,6 +9,7 @@ import Testimonials from '@/components/Testimonials';
 import ChatWidget from '@/components/ChatWidget';
 import BackToTop from '@/components/BackToTop';
 import Footer from '@/components/Footer';
+import WhyChooseUs from '@/components/WhyChooseUs';
 
 const Index = () => {
   useEffect(() => {
@@ -55,6 +55,7 @@ const Index = () => {
         <ServicesOverviewHome />
       </div>
       <StatsCounter />
+      <WhyChooseUs />
       <div id="clients">
         <Clients />
       </div>

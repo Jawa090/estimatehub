@@ -90,7 +90,7 @@ const Hero = () => {
             <div className="bg-white/15 backdrop-blur-lg p-6 rounded-xl border border-white/30 hover:border-construction-orange/60 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-construction-orange/30 group hidden md:block">
               <Shield className="h-10 w-10 mb-3 mx-auto text-construction-orange group-hover:scale-110 transition-transform duration-300" />
               <p className="font-semibold">Certified</p>
-              <p className="text-xs opacity-90">Expert Team</p>
+              <p className="text-xs opacity-90">Expert Team </p>
             </div>
           </div>
           
@@ -112,7 +112,7 @@ const Hero = () => {
                   data-aos="fade-up" 
                   data-aos-delay="300"
                 >
-                  Discover Our Excellence
+                  Discover  Our Excellence
                 </Button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-4xl max-h-[90vh] overflow-y-auto">

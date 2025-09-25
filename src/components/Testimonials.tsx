@@ -5,39 +5,39 @@ import { Quote, Star } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    name: "John Smith",
-    position: "Project Manager, ABC Construction",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
-    quote: "The estimation services provided by EstimatingHub were incredibly accurate and helped us secure contracts confidently. Their attention to detail is unmatched in the industry.",
+    name: "David Romero",
+    position: "Senior Project Manager, NorthBridge Constructors",
+    image: "https://randomuser.me/api/portraits/men/22.jpg",
+    quote: "EstimatingHub’s numbers landed within 1.3% of our final costs on a 120,000 sq ft office build. Their clarity on inclusions and assumptions made our bid review effortless and helped us win the project.",
     rating: 5,
-    project: "Commercial Office Complex"
+    project: "120k sq ft Office Expansion (NY)"
   },
   {
     id: 2,
-    name: "Sarah Johnson",
-    position: "Director, XYZ Developments",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
-    quote: "Their design team transformed our concept into a viable construction plan that exceeded our expectations. The 3D renderings were particularly helpful in visualizing the final project.",
+    name: "Aisha Patel",
+    position: "Director of Development, UrbanVista Realty",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    quote: "Turnaround in 36 hours, scope gap notes we actually used, and a clean export we sent straight to lenders. This is the most dependable estimating partner we’ve used in 10+ years.",
     rating: 5,
-    project: "Multi-family Residential"
+    project: "Mixed‑Use Residential (6 floors)"
   },
   {
     id: 3,
-    name: "Michael Chen",
-    position: "CEO, Chen Properties",
-    image: "https://randomuser.me/api/portraits/men/86.jpg",
-    quote: "We've been working with EstimatingHub for over five years now, and their management services have consistently delivered projects on time and within budget.",
-    rating: 4,
-    project: "Industrial Warehouse Facility"
+    name: "Miguel Alvarez",
+    position: "Operations Lead, Apex Industrial Group",
+    image: "https://randomuser.me/api/portraits/men/75.jpg",
+    quote: "We stress‑tested their takeoffs against our in‑house team on three packages—steel, drywall, and flooring. EstimatingHub was spot‑on and identified two vendor discrepancies before PO.",
+    rating: 5,
+    project: "Distribution Facility (250k sq ft)"
   },
   {
     id: 4,
-    name: "Emily Davis",
-    position: "Architect, Modern Spaces",
-    image: "https://randomuser.me/api/portraits/women/65.jpg",
-    quote: "The support team at EstimatingHub is responsive and knowledgeable. They've helped us navigate complex regulatory requirements and solved problems quickly when they arose.",
+    name: "Karen Liu",
+    position: "Principal Architect, Atelier KL",
+    image: "https://randomuser.me/api/portraits/women/52.jpg",
+    quote: "Their conceptual estimates early in design helped us steer materials and assemblies before drawings were locked. It saved the owner six figures without sacrificing design intent.",
     rating: 5,
-    project: "Healthcare Facility"
+    project: "Ambulatory Care Center"
   }
 ];
 

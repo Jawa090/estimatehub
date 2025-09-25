@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Check, Mail, Phone, MapPin } from 'lucide-react';
+import { Check, Mail, Phone, MapPin, ZoomIn, ZoomOut } from 'lucide-react';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -16,6 +16,7 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [file, setFile] = useState<File | null>(null);
+  const [zoomLevel, setZoomLevel] = useState(15);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -62,6 +63,14 @@ const Contact = () => {
     }, 1500);
   };
 
+  const handleZoomIn = () => {
+    setZoomLevel(prev => Math.min(prev + 1, 20));
+  };
+
+  const handleZoomOut = () => {
+    setZoomLevel(prev => Math.max(prev - 1, 10));
+  };
+
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -75,23 +84,10 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          <div className="order-2 lg:order-1" data-aos="fade-right">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <iframe
-                title="Office Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6261975869055!2d-73.98651242385559!3d40.74844657138603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9aeb1c6b5%3A0x35b1cfbc89a6097f!2sEmpire%20State%20Building%2C%20350%205th%20Ave%2C%20New%20York%2C%20NY%2010118%2C%20USA!5e0!3m2!1sen!2sca!4v1695253062321!5m2!1sen!2sca"
-                className="w-full h-64 lg:h-full"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-
-          <div className="order-1 lg:order-2" data-aos="fade-left">
-            <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+          {/* Contact Form Section */}
+          <div data-aos="fade-right">
+            <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300 h-full">
               <h3 className="text-2xl font-semibold mb-6 text-construction-blue flex items-center">
                 <Mail className="mr-2 text-construction-orange" /> Send us a Message
               </h3>
@@ -245,6 +241,60 @@ const Contact = () => {
                     <p className="text-gray-700">Mon - Fri: 9:00 AM - 5:00 PM</p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Map Section */}
+          <div data-aos="fade-left">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
+              <div className="p-4 bg-gray-50 border-b flex items-center justify-between">
+                <h3 className="text-lg font-semibold text-construction-blue flex items-center">
+                  <MapPin className="mr-2 text-construction-orange" size={20} />
+                  Our Location
+                </h3>
+                <div className="flex space-x-2">
+                  <button
+                    onClick={handleZoomOut}
+                    className="p-2 rounded-full bg-white border border-gray-300 hover:bg-gray-100 transition-colors"
+                    title="Zoom Out"
+                  >
+                    <ZoomOut size={16} className="text-construction-blue" />
+                  </button>
+                  <button
+                    onClick={handleZoomIn}
+                    className="p-2 rounded-full bg-white border border-gray-300 hover:bg-gray-100 transition-colors"
+                    title="Zoom In"
+                  >
+                    <ZoomIn size={16} className="text-construction-blue" />
+                  </button>
+                </div>
+              </div>
+              
+              <div className="flex-1 relative">
+                <iframe
+                  title="Office Location"
+                  src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6261975869055!2d-73.98651242385559!3d40.74844657138603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9aeb1c6b5%3A0x35b1cfbc89a6097f!2sEmpire%20State%20Building%2C%20350%205th%20Ave%2C%20New%20York%2C%20NY%2010118%2C%20USA!5e0!3m2!1sen!2sca!4v1695253062321!5m2!1sen!2sca&z=${zoomLevel}`}
+                  className="w-full h-full min-h-[400px]"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+                
+                {/* Custom Pin Indicator */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="flex flex-col items-center">
+                    <div className="w-6 h-6 bg-construction-orange rounded-full border-2 border-white shadow-lg animate-pulse"></div>
+                    <div className="w-1 h-8 bg-construction-orange mt-[-2px]"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="p-4 bg-gray-50 border-t">
+                <p className="text-sm text-gray-600 text-center">
+                  Zoom level: {zoomLevel}x • 876 70th street Brooklyn NY 11228
+                </p>
               </div>
             </div>
           </div>

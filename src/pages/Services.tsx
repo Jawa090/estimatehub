@@ -284,8 +284,7 @@ const Services = () => {
               </Button>
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-construction-blue px-8 py-3"
+                className="bg-construction-orange hover:bg-orange-600 text-white border-0 px-8 py-3"
                 onClick={() => {
                   window.location.href = 'tel:+15551234567';
                 }}

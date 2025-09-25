@@ -50,7 +50,10 @@ const Hero = () => {
             </div>
           </div>
           
-          <h1 className="text-5xl md:text-6xl lg:text-8xl font-poppins font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-100 to-white leading-tight">
+          <h1
+            className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-100 to-white leading-snug tracking-tight max-w-5xl mx-auto"
+            style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' as any, overflow: 'hidden' }}
+          >
             {typedText}
             <span className="animate-pulse text-construction-orange">|</span>
           </h1>
@@ -107,8 +110,7 @@ const Hero = () => {
             <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
                 <Button 
-                  variant="outline" 
-                  className="bg-white/10 backdrop-blur-lg border-2 border-white/50 text-white hover:bg-white hover:text-construction-blue text-lg py-8 px-12 rounded-xl transition-all transform hover:scale-105 shadow-2xl font-semibold tracking-wide" 
+                  className="bg-gradient-to-r from-construction-orange to-red-600 hover:from-red-600 hover:to-construction-orange text-white text-lg py-8 px-12 rounded-xl transition-all transform hover:scale-105 shadow-2xl shadow-construction-orange/40 font-semibold tracking-wide" 
                   data-aos="fade-up" 
                   data-aos-delay="300"
                 >

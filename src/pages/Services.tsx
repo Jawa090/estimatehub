@@ -14,6 +14,10 @@ const Services = () => {
       description: "Comprehensive quantity takeoff services for all construction materials and components with precision and accuracy.",
       icon: <Calculator className="h-8 w-8" />,
       link: "/services/quantity-takeoff",
+      topBarClass: "from-blue-500 via-blue-400 to-blue-500",
+      iconBgClass: "bg-blue-100 text-blue-600",
+      bulletClass: "bg-blue-500",
+      buttonClass: "bg-blue-600 hover:bg-blue-700",
       services: [
         { name: "Concrete Takeoff", link: "/services/concrete-takeoff" },
         { name: "Masonry Takeoff", link: "/services/masonry-takeoff" },
@@ -31,6 +35,10 @@ const Services = () => {
       description: "Accurate cost estimation with detailed analysis and budget planning for successful project delivery.",
       icon: <Building className="h-8 w-8" />,
       link: "/services/cost-estimation",
+      topBarClass: "from-emerald-500 via-emerald-400 to-emerald-500",
+      iconBgClass: "bg-emerald-100 text-emerald-600",
+      bulletClass: "bg-emerald-500",
+      buttonClass: "bg-emerald-600 hover:bg-emerald-700",
       services: [
         { name: "Preliminary / Budget Estimates", link: "/services/preliminary-estimates" },
         { name: "Detailed Estimates", link: "/services/detailed-estimates" },
@@ -44,6 +52,10 @@ const Services = () => {
       description: "Professional construction management services for optimal project execution and delivery.",
       icon: <Wrench className="h-8 w-8" />,
       link: "/services/construction-management",
+      topBarClass: "from-purple-500 via-purple-400 to-purple-500",
+      iconBgClass: "bg-purple-100 text-purple-600",
+      bulletClass: "bg-purple-500",
+      buttonClass: "bg-purple-600 hover:bg-purple-700",
       services: [
         { name: "Project Execution", link: "/services/construction-management" },
         { name: "Planning & Scheduling", link: "/services/construction-management" },
@@ -57,6 +69,10 @@ const Services = () => {
       description: "Specialized estimating services for complex and unique construction projects requiring expert knowledge.",
       icon: <Settings className="h-8 w-8" />,
       link: "/services/specialized-estimating",
+      topBarClass: "from-amber-500 via-amber-400 to-amber-500",
+      iconBgClass: "bg-amber-100 text-amber-700",
+      bulletClass: "bg-amber-500",
+      buttonClass: "bg-amber-600 hover:bg-amber-700",
       services: [
         // { name: "Trade-Specific Estimating", link: "/services/specialized-estimating" },
         // { name: "Civil & Infrastructure", link: "/services/specialized-estimating" },
@@ -72,6 +88,10 @@ const Services = () => {
       description: "Advanced software-based estimating solutions for precise calculations and efficient project delivery.",
       icon: <Monitor className="h-8 w-8" />,
       link: "/services/software-based-estimating",
+      topBarClass: "from-cyan-500 via-cyan-400 to-cyan-500",
+      iconBgClass: "bg-cyan-100 text-cyan-600",
+      bulletClass: "bg-cyan-500",
+      buttonClass: "bg-cyan-600 hover:bg-cyan-700",
       services: [
         { name: "On-Screen Takeoff (OST)", link: "/services/software-based-estimating" },
         { name: "Bluebeam Revu", link: "/services/software-based-estimating" },
@@ -85,6 +105,10 @@ const Services = () => {
       description: "Comprehensive documentation and reporting services for construction projects with professional standards.",
       icon: <FileText className="h-8 w-8" />,
       link: "/services/documentation-reporting",
+      topBarClass: "from-rose-500 via-rose-400 to-rose-500",
+      iconBgClass: "bg-rose-100 text-rose-600",
+      bulletClass: "bg-rose-500",
+      buttonClass: "bg-rose-600 hover:bg-rose-700",
       services: [
         { name: "Bill of Quantities (BOQ)", link: "/services/documentation-reporting" },
         { name: "Material Cost Reports", link: "/services/documentation-reporting" },
@@ -98,6 +122,10 @@ const Services = () => {
       description: "End-to-end project support services for successful project delivery and risk management.",
       icon: <Users className="h-8 w-8" />,
       link: "/services/project-support",
+      topBarClass: "from-indigo-500 via-indigo-400 to-indigo-500",
+      iconBgClass: "bg-indigo-100 text-indigo-600",
+      bulletClass: "bg-indigo-500",
+      buttonClass: "bg-indigo-600 hover:bg-indigo-700",
       services: [
         { name: "Scope Gap Analysis", link: "/services/project-support" },
         { name: "Subcontractor Quote Review", link: "/services/project-support" },
@@ -111,6 +139,10 @@ const Services = () => {
       description: "Industry-specific estimating for government, residential, commercial, retail, industrial, and design-build projects.",
       icon: <Award className="h-8 w-8" />,
       link: "/services/industry",
+      topBarClass: "from-teal-500 via-teal-400 to-teal-500",
+      iconBgClass: "bg-teal-100 text-teal-600",
+      bulletClass: "bg-teal-500",
+      buttonClass: "bg-teal-600 hover:bg-teal-700",
       services: [
         { name: "Government & Public Sector", link: "/services/government" },
         { name: "Residential Construction", link: "/services/residential" },
@@ -172,10 +204,11 @@ const Services = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {serviceCategories.map((category, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 group">
+              <Card key={index} className="hover:shadow-xl transition-all duration-300 group overflow-hidden h-full flex flex-col">
+                <div className={`h-1 bg-gradient-to-r from-construction-blue via-construction-lightBlue to-construction-blue`}></div>
                 <CardHeader className="pb-4">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="text-construction-orange group-hover:scale-110 transition-transform duration-300">
+                    <div className={`group-hover:scale-110 transition-transform duration-300 rounded-full p-2 bg-construction-orange/10 text-construction-orange`}>
                       {category.icon}
                     </div>
                     <CardTitle className="text-xl text-construction-blue group-hover:text-construction-orange transition-colors duration-300">
@@ -186,11 +219,11 @@ const Services = () => {
                     {category.description}
                   </p>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-1 flex flex-col">
                   <ul className="space-y-2 mb-6">
                     {category.services.map((service, serviceIndex) => (
                       <li key={serviceIndex} className="flex items-start space-x-2 text-sm">
-                        <div className="w-1.5 h-1.5 bg-construction-orange rounded-full mt-2 flex-shrink-0"></div>
+                        <div className={`w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 bg-construction-orange`}></div>
                         <Link 
                           to={service.link} 
                           className="text-gray-700 hover:text-construction-orange transition-colors duration-200"
@@ -200,8 +233,8 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to={category.link}>
-                    <Button className="w-full bg-construction-orange hover:bg-orange-600 transition-colors group">
+                  <Link to={category.link} className="mt-auto">
+                    <Button className={`w-full transition-colors group text-white bg-construction-orange hover:bg-orange-600`}>
                       Learn More
                       <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                     </Button>

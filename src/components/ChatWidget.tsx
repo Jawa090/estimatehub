@@ -43,7 +43,7 @@ const ChatWidget = () => {
     <>
       {/* Chat toggle button */}
       <button
-        className={`fixed bottom-6 right-6 z-50 w-14 h-14 bg-construction-blue text-white rounded-full shadow-lg flex items-center justify-center hover:bg-blue-700 transition-all ${
+        className={`fixed bottom-6 right-6 z-50 w-14 h-14 bg-construction-orange text-white rounded-full shadow-lg flex items-center justify-center hover:bg-orange-600 transition-all ${
           isOpen ? 'rotate-90' : ''
         }`}
         onClick={() => setIsOpen(!isOpen)}
@@ -58,10 +58,10 @@ const ChatWidget = () => {
         }`}
       >
         {/* Chat header */}
-        <div className="bg-construction-blue text-white p-4">
+        <div className="bg-construction-orange text-white p-4">
           <div className="flex items-center">
             <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-3">
-              <MessageCircle size={18} className="text-construction-blue" />
+              <MessageCircle size={18} className="text-construction-orange" />
             </div>
             <div>
               <h3 className="font-medium">Live Support</h3>
@@ -102,7 +102,7 @@ const ChatWidget = () => {
               placeholder="Type your message..."
               className="flex-1"
             />
-            <Button type="submit" className="bg-construction-blue hover:bg-blue-700">
+            <Button type="submit" className="bg-construction-orange hover:bg-orange-600">
               <Send size={16} />
             </Button>
           </div>

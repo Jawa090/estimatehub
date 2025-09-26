@@ -282,13 +282,7 @@ const Contact = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
                 
-                {/* Custom Pin Indicator */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <div className="flex flex-col items-center">
-                    <div className="w-6 h-6 bg-construction-orange rounded-full border-2 border-white shadow-lg animate-pulse"></div>
-                    <div className="w-1 h-8 bg-construction-orange mt-[-2px]"></div>
-                  </div>
-                </div>
+                {/* Custom Pin Indicator removed per request */}
               </div>
               
               <div className="p-4 bg-gray-50 border-t">

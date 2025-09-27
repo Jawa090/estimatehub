@@ -63,8 +63,8 @@ const Header = () => {
       children: [
         { name: "Preliminary / Budget Estimates", link: "/services/preliminary-estimates" },
         { name: "Detailed Estimates", link: "/services/detailed-estimates" },
-        { name: "Bid Estimates", link: "/services/cost-estimation" },
-        { name: "Conceptual Estimating", link: "/services/cost-estimation" },
+        { name: "Bid Estimates", link: "/services/bid-estimates" },
+        { name: "Conceptual Estimating", link: "/services/conceptual-estimating" },
         { name: "Labor & Equipment Analysis", link: "/services/cost-estimation" }
       ]
     },
@@ -115,7 +115,6 @@ const Header = () => {
         { name: "Commercial & Office", link: "/services/industry" },
         { name: "Retail & Tenant Improvement", link: "/services/retail" },
         { name: "Industrial Construction", link: "/services/industrial" },
-        { name: "Warehousing Construction", link: "/services/warehousing" },
         { name: "Turnkey, Design-Build & EPCM", link: "/services/industry" }
       ]
     },

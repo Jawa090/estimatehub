@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import ChatWidget from '@/components/ChatWidget';
 import BackToTop from '@/components/BackToTop';
 import { Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const residentialServices = [
   'Kitchen renovation cost estimates – cabinets, countertops, appliances, finishes',
@@ -71,7 +72,7 @@ const RenovationEstimating = () => {
           <p className="text-lg mb-4">
             At Paradise Estimating, we deliver expert renovation estimating services for both residential and commercial projects. Whether you're remodeling a kitchen or retrofitting a retail space, our cost estimates help you plan with confidence and win profitable jobs.
           </p>
-          <a href="/contact" className="bg-construction-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded transition flex items-center justify-center inline-block mt-4"><Phone className="h-5 w-5 mr-2" />Get Your Custom Estimate &rarr;</a>
+          <Link to="/contact" className="bg-construction-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded transition flex items-center justify-center inline-block mt-4"><Phone className="h-5 w-5 mr-2" />Get Your Custom Estimate &rarr;</Link>
         </div>
       </section>
 
@@ -164,7 +165,7 @@ const RenovationEstimating = () => {
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-2xl md:text-3xl font-poppins font-bold mb-6 text-construction-blue">Ready for Stress-Free Renovation Planning?</h2>
           <p className="text-lg text-gray-700 mb-8">Let's take the guesswork out of renovation costs. Whether you're a homeowner or a commercial builder, Paradise Estimating provides the accuracy you need to plan, budget, and win.</p>
-          <a href="/contact" className="bg-construction-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded transition flex items-center justify-center inline-block mt-4"><Phone className="h-5 w-5 mr-2" />Request Your Estimate</a>
+          <Link to="/contact" className="bg-construction-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded transition flex items-center justify-center inline-block mt-4"><Phone className="h-5 w-5 mr-2" />Request Your Estimate</Link>
         </div>
       </section>
 

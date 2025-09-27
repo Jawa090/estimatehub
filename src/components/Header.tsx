@@ -172,7 +172,7 @@ const Header = () => {
             {/* Logo - Left side */}
             <div className="flex items-center">
               <Link to="/">
-                <img src="/uploads/0d18cc57-bb81-4f64-9666-a22d86046947.png" alt="Company Logo" className="h-10" />
+                <img src={`${import.meta.env.BASE_URL}uploads/0d18cc57-bb81-4f64-9666-a22d86046947.png`} alt="Company Logo" className="h-10" />
               </Link>
             </div>
             

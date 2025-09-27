@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import ChatWidget from '@/components/ChatWidget';
 import BackToTop from '@/components/BackToTop';
 import { ArrowRight } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const ConcreteTakeoffServices = () => {
   return (
@@ -18,12 +19,12 @@ const ConcreteTakeoffServices = () => {
             <p className="text-xl mb-8 opacity-90">
               EstimatingHub delivers precise concrete takeoff services that eliminate costly errors and accelerate your project success. Our certified estimators utilize advanced software and industry expertise to provide accurate material quantification and labor analysis for foundations, slabs, driveways, and complex commercial structures.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center bg-construction-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300"
             >
               Get Your Free Quote Today <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -188,12 +189,12 @@ const ConcreteTakeoffServices = () => {
             <p className="text-xl mb-8 opacity-90">
               Transform your concrete estimating process with EstimatingHub's professional services. Upload your plans today and receive a detailed quote within 24 hours.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center bg-construction-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300"
             >
               Submit Your Plans Now <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import ChatWidget from '@/components/ChatWidget';
 import BackToTop from '@/components/BackToTop';
 import { ArrowRight, Calculator, Target, Clock, Database, CheckCircle, Building, Wrench, HardHat } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const QuantityTakeoffServices = () => {
   return (
@@ -18,12 +19,12 @@ const QuantityTakeoffServices = () => {
             <p className="text-xl mb-8 opacity-90">
               Quantity takeoffs are the cornerstone of effective construction project management. As the foundation for accurate cost estimates, they are essential for proper planning and resource allocation. Our quantity takeoff services are designed to give contractors, subcontractors, and developers the tools they need to create precise cost estimates, set realistic timelines, and win more bids.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center bg-construction-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300"
             >
               Get a Free Quote Now <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -260,12 +261,12 @@ const QuantityTakeoffServices = () => {
               <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8">
                 Our comprehensive range of quantity takeoff services ensures that every aspect of your construction project is accurately measured and costed. From initial site preparation to final finishing touches, we provide the detailed analysis you need for successful project execution.
               </p>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center bg-construction-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300"
               >
                 Get a Free Quote Now <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -389,12 +390,12 @@ const QuantityTakeoffServices = () => {
               Transform your construction estimating process with EstimatingHub's professional quantity takeoff services. Our 48-hour standard turnaround and comprehensive cost database ensure you get the accuracy and speed you need to win more bids.
             </p>
             <div className="mb-8">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="bg-construction-orange hover:bg-orange-600 text-white px-12 py-6 rounded-lg font-semibold text-xl transition-colors duration-300 flex items-center justify-center mx-auto max-w-sm"
               >
                 Get a Free Quote Now <ArrowRight className="ml-2 h-6 w-6" />
-              </a>
+              </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">

@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import ChatWidget from '@/components/ChatWidget';
 import BackToTop from '@/components/BackToTop';
 import { Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const whyChoose = [
   'Certified estimating professionals',
@@ -75,7 +76,7 @@ const SpecializedEstimating = () => {
           <h2 className="text-2xl md:text-3xl font-poppins font-bold mb-6 text-construction-blue">Ready to get professional construction estimating services?</h2>
           <p className="text-lg text-gray-700 mb-8">Contact our cost estimating specialists today.</p>
           <div className="flex flex-col md:flex-row justify-center gap-6 mt-4">
-            <a href="/contact" className="bg-construction-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded transition flex items-center justify-center"><Phone className="h-5 w-5 mr-2" />Contact Us</a>
+            <Link to="/contact" className="bg-construction-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded transition flex items-center justify-center"><Phone className="h-5 w-5 mr-2" />Contact Us</Link>
           </div>
         </div>
       </section>

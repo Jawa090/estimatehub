@@ -82,84 +82,113 @@ const Residential = () => {
       <section className="pt-32 pb-16 bg-gradient-to-r from-construction-blue to-construction-lightBlue text-white">
         <div className="container mx-auto px-4 max-w-5xl text-center">
           <h1 className="text-4xl md:text-5xl font-poppins font-bold mb-6">Residential Construction Estimating Services</h1>
+          <p className="text-xl mb-4 opacity-90">
+            Accurate residential cost estimates are crucial for the success of any construction project, but they can be complex and time-consuming. Miscalculations can lead to costly delays or, worse, losing a bid. We provide reliable and precise residential estimating services designed to help you succeed.
+          </p>
           <p className="text-xl mb-8 opacity-90">
-            Did you know that 70% of residential construction projects exceed their budgets due to inaccurate or incomplete estimating? That's not just a statistic—it's a costly reality for many developers and builders across the U.S.<br />
-            At Paradise Estimating, we've built our reputation by flipping that stat on its head. Our expert team delivers high-precision residential estimating services that empower developers to build smarter, faster, and more profitably. Whether you're planning a custom home, a townhouse community, or a multi-story apartment block, we ensure on-time, on-budget delivery—from concept through construction.
+            Our services are tailored for both homeowners and builders, providing detailed project cost evaluations that account for the latest market trends and construction methodologies. We also include contingency planning to identify and manage potential risks, ensuring your project stays on track and within budget.
           </p>
         </div>
       </section>
 
-      {/* Project Expertise Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue text-center">Our Residential Project Expertise</h2>
-          <p className="text-lg text-gray-700 mb-8 text-center">Trusted by Top Developers for 15+ Years</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {projectTypes.map((item, idx) => (
-              <Card key={idx} className="hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold text-construction-blue mb-2">{item.title}</h3>
-                  <p className="text-gray-700 text-base">{item.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+      {/* Image Gallery Section */}
+      <section className="py-12 bg-gradient-to-r from-construction-blue to-construction-lightBlue text-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2">
+              <img src="/6.jpg" alt="Residential estimating image 1" className="w-full h-64 object-cover rounded-md ring-1 ring-white/30" />
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2">
+              <img src="/7.jpg" alt="Residential estimating image 2" className="w-full h-64 object-cover rounded-md ring-1 ring-white/30" />
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2">
+              <img src="/8.jpg" alt="Residential estimating image 3" className="w-full h-64 object-cover rounded-md ring-1 ring-white/30" />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* What Sets Us Apart Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue">What Sets Us Apart</h2>
-          <ul className="list-disc list-inside text-lg text-gray-700 space-y-2 text-left inline-block mb-6">
-            {whatSetsUsApart.map((item, idx) => (
-              <li key={idx}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* End-to-End Solutions Section */}
+      {/* Our Residential Estimating Portfolio */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue text-center">End-to-End Estimating Solutions</h2>
-          <p className="text-lg text-gray-700 mb-8 text-center">At Paradise Estimating, we don't just provide numbers—we provide clarity. Our full-spectrum residential estimating services are designed to support developers at every stage of the project lifecycle.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {endToEndSolutions.map((item, idx) => (
-              <Card key={idx} className="hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold text-construction-blue mb-2">{item.title}</h3>
-                  <p className="text-gray-700 text-base">{item.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+        <div className="container mx-auto px-4 max-w-5xl text-center">
+          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue">Our Residential Estimating Portfolio</h2>
+          <p className="text-lg text-gray-700 mb-6">With years of experience, we've developed deep insights into residential projects of all types. We provide single-family and multi-family residential estimating services that have contributed to the successful completion of a wide range of properties, including:</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <li>Single-Family Housing & Custom Homes</li>
+              <li>Bungalows & Cottages</li>
+              <li>Multi-Family Housing & Apartments</li>
+            </ul>
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <li>Mansions & Modular Housing</li>
+              <li>Duplexes</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      {/* Why Builders Choose Paradise Section */}
+      {/* Why Choose Us for Your Residential Estimating Needs? */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue">Why Builders Choose Paradise</h2>
-          <p className="text-lg text-gray-700 mb-4">Developer-Focused. Not Generic.<br />Unlike outdated per-square-foot models, our trade-specific databases reflect real-time material and labor costs in all 50 states."<br />Most estimating firms still rely on one-size-fits-all square footage pricing. We don't. At Paradise Estimating, we customize each estimate based on actual trade rates, regional labor costs, and supplier pricing trends. It's how we maintain 98% accuracy across thousands of residential projects.</p>
+          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue">Why Choose Us for Your Residential Estimating Needs?</h2>
           <ul className="list-disc list-inside text-lg text-gray-700 space-y-2 text-left inline-block mb-6">
-            {whyBuildersChoose.map((item, idx) => (
-              <li key={idx}>{item}</li>
-            ))}
+            <li>Accurate Budget Estimates: We provide precise forecasts for sound financial planning.</li>
+            <li>Diverse Industry Expertise: Our knowledge spans all residential construction types.</li>
+            <li>Precise Software Tools: We use the latest technology to ensure reliable results.</li>
+            <li>Efficient Decision Support: Our estimates give you the confidence to win more bids.</li>
+            <li>24/7 Customer Support: We're always available to answer your questions.</li>
           </ul>
         </div>
       </section>
 
-      {/* Who We Work With Section */}
+      {/* Specialized Estimating for All Residential Trades */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue">Who We Work With</h2>
-          <ul className="list-disc list-inside text-lg text-gray-700 space-y-2 text-left inline-block mb-6">
-            {whoWeWorkWith.map((item, idx) => (
-              <li key={idx}>{item}</li>
-            ))}
-          </ul>
-          <p className="text-lg text-gray-700 mt-8">Whether you're developing a single infill property or launching a 500-lot master-planned community, we adapt our delivery to meet your project needs and team structure.</p>
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue text-center">Specialized Estimating for All Residential Trades</h2>
+          <p className="text-lg text-gray-700 mb-6 text-center">Our residential estimators are skilled in providing detailed cost breakdowns for a wide variety of trades, from small tasks to large-scale projects. We provide services for:</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <li>Lumber & Framing</li>
+              <li>Concrete & Masonry</li>
+              <li>MEP & Electrical</li>
+              <li>Earthworks & Site Improvements</li>
+            </ul>
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <li>Doors, Windows & Millwork</li>
+              <li>Roofing & Siding</li>
+              <li>Painting & Finishes</li>
+              <li>Landscaping</li>
+            </ul>
+          </div>
+          <p className="text-lg text-gray-700 mt-6 text-center">We can also assist with preliminary estimates, even if your plans are not fully finalized. Our services cover sub-structures, super-structures, finishing, and all trades.</p>
+        </div>
+      </section>
+
+      {/* For Homeowners & Contractors */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue text-center">For Homeowners & Contractors</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow">
+              <h3 className="text-xl font-semibold text-construction-blue mb-2">For Homeowners</h3>
+              <p className="text-gray-700">Our services help you evaluate the true cost of your dream home, including all required materials and labor, allowing you to avoid surprises.</p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow">
+              <h3 className="text-xl font-semibold text-construction-blue mb-2">For Contractors</h3>
+              <p className="text-gray-700">We act as an extension of your team, providing a detailed plan that ensures you get accurate quotes every time. This allows you to focus on your core responsibilities and streamlines your workflow.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-3xl text-center">
+          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-4 text-construction-blue">Ready to get a precise estimate for your next project?</h2>
+          <p className="text-lg text-gray-700 mb-6">Get a free quote today!</p>
+          <div className="flex justify-center">
+            <a href="/contact" className="bg-construction-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded transition flex items-center justify-center"><Phone className="h-5 w-5 mr-2" />Get Free Quote</a>
+          </div>
         </div>
       </section>
 

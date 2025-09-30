@@ -219,6 +219,16 @@ const Header = () => {
                                     </Link>
                                   </li>
                                 ))}
+                                <li>
+                                  <Link
+                                    to="/services"
+                                    className="inline-flex items-center text-[11px] font-semibold text-construction-blue hover:text-construction-orange py-1 px-2 rounded hover:bg-orange-50"
+                                    title="View more services"
+                                  >
+                                    View more
+                                    <ChevronDown className="w-3 h-3 ml-1" />
+                                  </Link>
+                                </li>
                               </ul>
                             </div>
                           ))}

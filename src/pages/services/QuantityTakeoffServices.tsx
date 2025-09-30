@@ -14,10 +14,13 @@ const QuantityTakeoffServices = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-poppins font-bold mb-6">
-              Professional Quantity Takeoff Services - The Cornerstone of Construction Excellence
+              Precise Quantity Takeoff Services
             </h1>
+            <p className="text-xl mb-6 opacity-90">
+              Quantity takeoffs are the cornerstone of effective construction project management. As the foundation for accurate cost estimates, they are essential for proper planning and resource allocation. A construction takeoff provides a detailed list of the materials, labor, and equipment needed for a project, ensuring every resource is accounted for and appropriately budgeted.
+            </p>
             <p className="text-xl mb-8 opacity-90">
-              Quantity takeoffs are the cornerstone of effective construction project management. As the foundation for accurate cost estimates, they are essential for proper planning and resource allocation. Our quantity takeoff services are designed to give contractors, subcontractors, and developers the tools they need to create precise cost estimates, set realistic timelines, and win more bids.
+              Our quantity takeoff services are designed to give contractors, subcontractors, and developers the tools they need to create precise cost estimates, set realistic timelines, and win more bids. We use a wide range of advanced tools to deliver reliable results with a standard 48-hour turnaround time.
             </p>
             <Link
               to="/contact"
@@ -70,6 +73,25 @@ const QuantityTakeoffServices = () => {
                     We pride ourselves on being a market leader in turnaround times. While complexity can vary, most takeoffs are delivered in less than 48 hours.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Gallery Section */}
+      <section className="py-12 bg-gradient-to-r from-construction-blue to-construction-lightBlue text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2">
+                <img src="/1.jpg" alt="Quantity takeoff sample 1" className="w-full h-64 object-cover rounded-md ring-1 ring-white/30" />
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2">
+                <img src="/2.jpg" alt="Quantity takeoff sample 2" className="w-full h-64 object-cover rounded-md ring-1 ring-white/30" />
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2">
+                <img src="/3.jpg" alt="Quantity takeoff sample 3" className="w-full h-64 object-cover rounded-md ring-1 ring-white/30" />
               </div>
             </div>
           </div>

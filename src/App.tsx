@@ -45,6 +45,7 @@ import Turnkey from './pages/services/Turnkey';
 import CSIEstimating from './pages/services/CSIEstimating';
 import ValueEngineering from './pages/services/ValueEngineering';
 import RenovationEstimating from './pages/services/RenovationEstimating';
+import ExpertEstimating from './pages/services/ExpertEstimating';
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -98,6 +99,7 @@ const App = () => (
           <Route path="/services/csi-trades-estimating" element={<CSIEstimating />} />
           <Route path="/services/value-engineering" element={<ValueEngineering />} />
           <Route path="/services/renovation-estimating" element={<RenovationEstimating />} />
+          <Route path="/services/expert-estimating" element={<ExpertEstimating />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

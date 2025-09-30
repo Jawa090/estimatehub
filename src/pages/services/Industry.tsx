@@ -34,6 +34,21 @@ const Industry = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue text-center">Industries We Serve</h2>
+          {/* Expert Construction Estimating (child service) */}
+          <Card className="mb-8">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold text-construction-blue mb-2">Expert Construction Estimating Services</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+                <div className="md:col-span-2">
+                  <p className="text-gray-700 mb-2">Nationwide, full-scope estimating for contractors, subs, homeowners, developers, and architects. Trade-specialist estimators deliver precise, up-to-date cost insights for projects from new builds to renovations.</p>
+                  <Link to="/services/expert-estimating" className="inline-block mt-2 bg-construction-orange hover:bg-orange-600 text-white font-bold py-2 px-6 rounded transition flex items-center justify-center">View Expert Estimating <ArrowRight className="h-4 w-4 ml-2" /></Link>
+                </div>
+                <div className="hidden md:block">
+                  <img src="/1.jpg" alt="Estimating example" className="w-full h-28 object-cover rounded-md ring-1 ring-gray-200" />
+                </div>
+              </div>
+            </CardContent>
+          </Card>
 
           {/* Government & Public Sector */}
           <Card className="mb-8">
@@ -60,8 +75,7 @@ const Industry = () => {
           <Card className="mb-8">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-construction-blue mb-2">Commercial & Office Projects</h3>
-              <p className="text-gray-700 mb-2">Detailed Estimating for Complex Commercial Builds</p>
-              <p className="text-gray-700 mb-2">Our expertise covers all aspects of construction, from framing and finishes to renovations and new builds. We specialize in a variety of project types, including custom homes, subdivisions, townhomes, multi-family units, renovations, and additions. Accurate and timely estimates are essential for minimizing material waste, securing financing, and ensuring effective project planning to maximize profitability.</p>
+              <p className="text-gray-700 mb-2">Professional Commercial Construction Estimating Services tailored for offices, mixed-use, hospitality, healthcare, and education. Accurate budgets, fast turnaround, and transparent breakdowns help you win bids and maintain financial control.</p>
               <Link to="/contact" className="inline-block mt-2 bg-construction-orange hover:bg-orange-600 text-white font-bold py-2 px-6 rounded transition flex items-center justify-center">Learn More About Commercial Project Estimating <ArrowRight className="h-4 w-4 ml-2" /></Link>
             </CardContent>
           </Card>

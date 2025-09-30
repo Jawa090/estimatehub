@@ -186,25 +186,46 @@ const Commercial = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-r from-construction-blue to-construction-lightBlue text-white">
         <div className="container mx-auto px-4 max-w-5xl text-center">
-          <h1 className="text-4xl md:text-5xl font-poppins font-bold mb-6">Commercial Construction Estimating Services</h1>
-          <p className="text-xl mb-8 opacity-90">
-            Expert Commercial Estimating Solutions<br />
-            At Paradise Estimating, we understand that accurate commercial construction estimates are the foundation of profitable projects. Our team of certified estimators combines decades of industry experience with cutting-edge technology to deliver precise, comprehensive estimates that help you win more bids and maximize profitability.
+          <h1 className="text-4xl md:text-5xl font-poppins font-bold mb-6">Professional Commercial Construction Estimating Services</h1>
+          <p className="text-xl mb-4 opacity-90">
+            The commercial and residential sectors of the construction industry each require precise estimating services to ensure project viability and success. For commercial projects, this is especially critical due to the significant capital investment involved. Accurate commercial estimating services not only provide a clear financial outlook but also offer crucial timelines for project completion, helping general contractors and cost estimators stay on track.
           </p>
-          <Link to="/contact" className="inline-block mt-4 bg-construction-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded transition flex items-center justify-center">
+          <p className="text-xl mb-8 opacity-90">
+            At Estimating Hub Platform, we understand the complexities of commercial projects. Our services are designed to help you mitigate risks and significantly reduce expenses.
+          </p>
+          <Link to="/contact" className="inline-block mt-2 bg-construction-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded transition flex items-center justify-center">
             Contact us today for a free consultation <ArrowRight className="h-5 w-5 ml-2" />
           </Link>
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
+      {/* Image Gallery Section */}
+      <section className="py-12 bg-gradient-to-r from-construction-blue to-construction-lightBlue text-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2">
+              <img src="/4.jpg" alt="Commercial estimating image 1" className="w-full h-64 object-cover rounded-md ring-1 ring-white/30" />
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2">
+              <img src="/5.jpg" alt="Commercial estimating image 2" className="w-full h-64 object-cover rounded-md ring-1 ring-white/30" />
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2">
+              <img src="/6.jpg" alt="Commercial estimating image 3" className="w-full h-64 object-cover rounded-md ring-1 ring-white/30" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Our Commercial Estimating Services */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue">Why Choose Paradise Estimating for Commercial Construction?</h2>
+          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue">Why Choose Our Commercial Estimating Services?</h2>
           <ul className="list-disc list-inside text-lg text-gray-700 space-y-2 text-left inline-block mb-6">
-            {whyChoose.map((item, idx) => (
-              <li key={idx}>{item}</li>
-            ))}
+            <li>Experienced Team: Our team of seasoned professionals is highly skilled in handling complex commercial projects.</li>
+            <li>Latest Technology: We use cutting-edge software and technology to create highly accurate and detailed estimates.</li>
+            <li>Comprehensive Service: We provide a full-scope service, ensuring every aspect of your project is meticulously planned.</li>
+            <li>Affordable Pricing: Our competitive pricing ensures you receive top-tier service without breaking your budget.</li>
+            <li>Client Commitment: We are dedicated to ensuring our clients are completely satisfied with our work.</li>
           </ul>
         </div>
       </section>
@@ -212,78 +233,50 @@ const Commercial = () => {
       {/* Project Expertise Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue text-center">Our Commercial Project Expertise</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {projectExpertise.map((sector, idx) => (
-              <Card key={idx} className="hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold text-construction-blue mb-2">{sector.title}</h3>
-                  <ul className="list-disc list-inside text-gray-700 text-base space-y-1">
-                    {sector.items.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Comprehensive Services Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue text-center">Comprehensive Commercial Estimating Services</h2>
-          <div className="space-y-10">
-            {comprehensiveServices.map((service, idx) => (
-              <div key={idx}>
-                <h3 className="text-xl font-semibold text-construction-blue mb-2">{service.title}</h3>
-                <p className="text-gray-700 mb-2">{service.description}</p>
-                {service.items && (
-                  <ul className="list-disc list-inside text-gray-700 text-base space-y-1 mb-4">
-                    {service.items.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Advanced Technology & Software Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue text-center">Advanced Technology & Software</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {technology.map((tech, idx) => (
-              <Card key={idx} className="hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold text-construction-blue mb-2">{tech.title}</h3>
-                  <ul className="list-disc list-inside text-gray-700 text-base space-y-1">
-                    {tech.items.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CSI Division Coverage Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue">Complete CSI Division Coverage</h2>
-          <ul className="list-disc list-inside text-lg text-gray-700 space-y-2 text-left inline-block mb-6">
-            {csiDivisions.map((item, idx) => (
-              <li key={idx}>{item}</li>
-            ))}
+          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue text-center">Key Benefits of Our Commercial Estimating Services</h2>
+          <ul className="list-disc list-inside text-gray-700 text-lg space-y-2 max-w-3xl mx-auto">
+            <li>Accurate Budgets & Bid Accuracy: Our precise estimates help you secure bids and maintain financial control.</li>
+            <li>Time & Cost Savings: We help you identify and eliminate unnecessary overheads, improving your profit margins.</li>
+            <li>Feasibility & Financial Planning: We provide the data you need for sound financial planning and risk management.</li>
+            <li>Enhanced Focus & Efficiency: Our detailed reports allow you to focus on the project itself, confident in your budget and timelines.</li>
+            <li>Transparency & Flexibility: Our clear, detailed breakdowns provide full cost transparency and the flexibility to negotiate effectively.</li>
           </ul>
         </div>
       </section>
+
+      {/* Commercial Estimation Portfolio */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-5xl text-center">
+          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue">Our Commercial Estimation Portfolio</h2>
+          <p className="text-lg text-gray-700 mb-6">Our commercial estimating services involve gathering data, analyzing project requirements, and creating detailed cost breakdowns. We use our expertise to foresee potential challenges and ensure all resources are appropriately allocated. We provide comprehensive estimates for a wide range of commercial projects, including:</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <li>Office Buildings</li>
+              <li>Retail Spaces</li>
+              <li>Hotels & Motels</li>
+              <li>Multi-use Developments</li>
+            </ul>
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <li>Healthcare Facilities</li>
+              <li>Educational Buildings</li>
+              <li>Restaurants & Entertainment Venues</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-3xl text-center">
+          <h2 className="text-3xl md:text-4xl font-poppins font-bold mb-6 text-construction-blue">Ready to get a precise estimate for your next commercial project?</h2>
+          <p className="text-lg text-gray-700 mb-6">Get a free quote now!</p>
+          <div className="flex justify-center">
+            <a href="/contact" className="bg-construction-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded transition flex items-center justify-center"><Phone className="h-5 w-5 mr-2" />Get Free Quote</a>
+          </div>
+        </div>
+      </section>
+
+      {/* (Optional) Additional coverage sections can be reintroduced as needed */}
 
       {/* Call to Action Section */}
       <section className="py-16 bg-gray-50">
